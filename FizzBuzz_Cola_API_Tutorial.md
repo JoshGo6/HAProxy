@@ -36,7 +36,7 @@ payload = {
 response = requests.post(url, data=payload)
 if response.status_code == 200:
     print("You're subscribed!")
-elif response.status_code == 200:
+elif response.status_code == 500:
     print("The following error occurred: \n", response.json())
 else
     break
@@ -63,7 +63,7 @@ payload = {
 response = requests.post(url, data=payload)
 if response.status_code == 200:
     print("You're subscribed!")
-elif response.status_code == 200:
+elif response.status_code == 500:
     print("The following error occurred: \n", response.json())
 else
     break
@@ -90,12 +90,14 @@ payload = {
 
 To unsubscribe to delivery service, send a delivery date of `01/01/1900` in the payload:
 
+```Python
 payload = {
     "address": "587 HAProxy Dr.",
     "delivery_start_date": "01/01/1900",
     "drink_flavor": "strawberry",
     "texts_enabled": "False",
 }
+```
 
 ## Troubleshooting
 
@@ -121,9 +123,9 @@ This reference contains information on the inputs to the API call, as well as po
   - `drink_flavor` (string): `classic`, `orange`, or `strawberry`
   - `texts_enabled` (bool): `True` to enable SMS reminders, otherwise `False`
 - **Optional Fields:**
-  - `texts_phone` (string): Phone number for SMS reminders, required if `texts_enabled` is true
+  - `texts_phone` (string): Phone number for SMS reminders, required if `texts_enabled` is `True`
 
 ### Responses
 
-- **Successful Response:** HTTP 200, indicating subscription was successful
-- **Error Response:** HTTP 500 with JSON detailing the error
+- **Successful Response:** `HTTP 200`, indicating subscription was successful
+- **Error Response:** `HTTP 500` with JSON detailing the error
