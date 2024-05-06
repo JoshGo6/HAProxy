@@ -29,7 +29,7 @@ payload = {
     "address": "587 HAProxy Dr.",
     "delivery_start_date": "05/05/2024",
     "drink_flavor": "strawberry",
-    "texts_enabled": "False",
+    "texts_enabled": "false",
 }
 
 # Send POST request and print response
@@ -55,7 +55,7 @@ payload = {
     "address": "587 HAProxy Dr.",
     "delivery_start_date": "07/04/2024",
     "drink_flavor": "orange",
-    "texts_enabled": "True",
+    "texts_enabled": "true",
     "texts_phone": "7037879641"
 }
 
@@ -73,7 +73,7 @@ else
 
 To receive SMS reminders before each delivery, in the `payload` JSON:
 
-- Set `texts_enabled` to `True`
+- Set `texts_enabled` to `true`
 - Include your phone number as the value for `texts_phone`
 
 ```python
@@ -81,7 +81,7 @@ payload = {
     "address": "587 HAProxy Dr.",
     "delivery_start_date": "05/05/2024",
     "drink_flavor": "strawberry",
-    "texts_enabled": "True", 
+    "texts_enabled": "true", 
     "texts_phone": "7037879641"
 }
 ```
@@ -95,7 +95,7 @@ payload = {
     "address": "587 HAProxy Dr.",
     "delivery_start_date": "01/01/1900",
     "drink_flavor": "strawberry",
-    "texts_enabled": "False",
+    "texts_enabled": "false",
 }
 ```
 
@@ -121,9 +121,9 @@ This reference contains information on the inputs to the API call, as well as po
   - `address` (string): Delivery address
   - `delivery_start_date` (string): Start date for deliveries, in `MM/DD/YYYY` format (but unsubscribes from delivery if set to `01/01/1900`)
   - `drink_flavor` (string): `classic`, `orange`, or `strawberry`
-  - `texts_enabled` (bool): `True` to enable SMS reminders, otherwise `False`
+  - `texts_enabled` (bool): `true` to enable SMS reminders, otherwise `false`
 - **Optional Fields:**
-  - `texts_phone` (string): Phone number for SMS reminders, required if `texts_enabled` is `True`
+  - `texts_phone` (string): Phone number for SMS reminders, required if `texts_enabled` is `true`
 
 ### Responses
 
