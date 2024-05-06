@@ -1,6 +1,21 @@
 # FizzBuzz Cola API Documentation
 
-This API allows you to subscribe to FizzBuzz Cola.
+This API allows you to subscribe to FizzBuzz Cola. This documentation covers the following:
+
+[Introdction](#Introduction)
+[Subscription procedure](#subscription-procedure)
+    [Example 1](#example-1)
+    [Example 2](#example-2)
+[Create endpoint and payload](#create-endpoint-and-payload)
+[Send POST request and print response](#send-post-request-and-print-response)
+[Create endpoint and payload](#create-endpoint-and-payload)
+[Send POST request and print response](#send-post-request-and-print-response)
+[Optional: Enable SMS reminders](#optional:-enable-sms-reminders)
+[Unsubscribing](#unsubscribing)
+[Troubleshooting](#troubleshooting)
+[Reference](#reference)
+    [Inputs](#inputs)
+    [Responses](#responses)
 
 ## Introduction
   
