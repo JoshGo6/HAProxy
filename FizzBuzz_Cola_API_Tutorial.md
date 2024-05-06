@@ -10,9 +10,9 @@ The FizzBuzz Cola API allows you to integrate your subscription process to FizzB
 
 To use the API, you should have a:
 
-- General knowledge of Python.
-- Familiarity with the Python `requests` library.
-- General knowledge of the JSON format.
+- General knowledge of Python
+- Familiarity with the Python `requests` library
+- General knowledge of the JSON format
 
 ## Subscription procedure
 
