@@ -1,8 +1,8 @@
-# Tutorial for Subscribing using FizzBuzz Cola API
+# FizzBuzz Cola API Documentation
 
 This API allows you to subscribe to FizzBuzz Cola.
 
-## Concepts
+## Introduction
   
 The FizzBuzz Cola API allows you to integrate your subscription process to FizzBuzz Cola into your existing API workflow. Add it to your grocery script and let us do the rest!
 
@@ -12,7 +12,7 @@ Prerequisites:
 - Familiarity with the Python `requests` library.
 - General knowledge of JSON format.
 
-## Instructions
+## Subscription procedure
 
 What follows are two simple Python scripts using the `requests` library to subscribe to the delivery service:
 
