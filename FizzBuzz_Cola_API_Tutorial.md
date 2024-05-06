@@ -40,7 +40,7 @@ if response.status_code == 200:
     print("You're subscribed!")
 elif response.status_code == 500:
     print("The following error occurred: \n", response.json())
-else
+else:
     break
 ```
 
@@ -67,7 +67,7 @@ if response.status_code == 200:
     print("You're subscribed!")
 elif response.status_code == 500:
     print("The following error occurred: \n", response.json())
-else
+else:
     break
 ```
 
