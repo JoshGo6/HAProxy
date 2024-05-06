@@ -127,5 +127,5 @@ This reference contains information on the inputs to the API call, as well as po
 
 ### Responses
 
-- **Successful Response:** `HTTP 200`, indicating subscription was successful
-- **Error Response:** `HTTP 500` with JSON detailing the error
+- **Successful Response:** `status_code` is `200`, indicating subscription was successful
+- **Error Response:** `status_code` is `500`, with JSON detailing the error
