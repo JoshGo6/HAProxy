@@ -41,7 +41,7 @@ if response.status_code == 200:
 elif response.status_code == 500:
     print("The following error occurred: \n", response.json())
 else:
-    break
+    print("There has been a communication error with the endpoint. Please try again.")
 ```
 
 ### Example 2
@@ -68,7 +68,7 @@ if response.status_code == 200:
 elif response.status_code == 500:
     print("The following error occurred: \n", response.json())
 else:
-    break
+    print("There has been a communication error with the endpoint. Please try again.")
 ```
 
 ## Optional: Enable SMS reminders
