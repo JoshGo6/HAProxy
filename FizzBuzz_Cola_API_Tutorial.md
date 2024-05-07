@@ -16,7 +16,7 @@ To use the API, you should have a:
 
 ## Subscription procedure
 
-What follows are two simple Python scripts using the `requests` library to subscribe to the delivery service:
+The following two Python examples demonstrate how to subscribe to the delivery service:
 
 ### Example 1
 
